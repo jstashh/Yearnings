@@ -1,0 +1,47 @@
+query AccountEarnings($ids: [ID!]!) {
+    accounts(where: {id_in: $ids}) {
+    sharesSent {
+      tokenAmount
+      vault {
+        id
+      }
+    }
+    sharesReceived {
+      tokenAmount
+      vault {
+        id
+      }
+    }
+    deposits {
+      tokenAmount
+      vault {
+        id
+      }
+    }
+    withdrawals {
+      tokenAmount
+      vault {
+        id
+      }
+    }
+    vaultPositions {
+      balanceShares
+      token {
+        id
+        symbol
+        decimals
+      }
+      shareToken {
+        id
+        symbol
+        decimals
+      }
+      vault {
+        id
+        latestUpdate {
+            pricePerShare
+        }
+      }
+    }
+  }
+}

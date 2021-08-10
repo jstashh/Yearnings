@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E1128C3265445420079FDC3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E1128C2265445420079FDC3 /* KeychainSwift */; };
+		5E1E9CDE264F01E9009E342E /* VaultApyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E9CDD264F01E9009E342E /* VaultApyStore.swift */; };
+		5E2688102662DBD000CC4ABB /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E26880F2662DBD000CC4ABB /* NumberFormatterTests.swift */; };
+		5E73A59E263374B400532EB9 /* YearningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A59D263374B400532EB9 /* YearningsApp.swift */; };
+		5E73A5A0263374B400532EB9 /* EarningsDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A59F263374B400532EB9 /* EarningsDashboardView.swift */; };
+		5E73A5A2263374B400532EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E73A5A1263374B400532EB9 /* Assets.xcassets */; };
+		5E73A5A5263374B400532EB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E73A5A4263374B400532EB9 /* Preview Assets.xcassets */; };
+		5E73A5CD2633757F00532EB9 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A5CC2633757F00532EB9 /* ApolloCore */; };
+		5E73A5CF2633757F00532EB9 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A5CE2633757F00532EB9 /* ApolloWebSocket */; };
+		5E73A5D12633757F00532EB9 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A5D02633757F00532EB9 /* Apollo */; };
+		5E73A5D32633757F00532EB9 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A5D22633757F00532EB9 /* ApolloCodegenLib */; };
+		5E73A5F826337B0000532EB9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A5F726337B0000532EB9 /* API.swift */; };
+		5E73A5FD26337D6000532EB9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A5FC26337D6000532EB9 /* Network.swift */; };
+		5E73A6052634116500532EB9 /* VaultUserDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6042634116500532EB9 /* VaultUserDataFactory.swift */; };
+		5E73A60B263412A700532EB9 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A60A263412A700532EB9 /* BigInt */; };
+		5E73A61026341A1F00532EB9 /* VaultEarningsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A60F26341A1F00532EB9 /* VaultEarningsViewModel.swift */; };
+		5E73A61526341EBC00532EB9 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A61426341EBC00532EB9 /* ImageStore.swift */; };
+		5E73A620263435BC00532EB9 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A61F263435BC00532EB9 /* CryptoSwift */; };
+		5E73A6292634470100532EB9 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A6282634470100532EB9 /* Web3ContractABI */; };
+		5E73A62B2634470100532EB9 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 5E73A62A2634470100532EB9 /* Web3 */; };
+		5E73A65426345FAE00532EB9 /* VaultAliasStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A65326345FAE00532EB9 /* VaultAliasStore.swift */; };
+		5E73A65926348A0100532EB9 /* Web3Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A65826348A0100532EB9 /* Web3Store.swift */; };
+		5E73A65E26348AD400532EB9 /* USDCPriceOracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A65D26348AD400532EB9 /* USDCPriceOracle.swift */; };
+		5E73A6632634AEEB00532EB9 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6622634AEEB00532EB9 /* VaultView.swift */; };
+		5E73A6682634C65B00532EB9 /* TotalEarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6672634C65B00532EB9 /* TotalEarningsView.swift */; };
+		5E73A66D2634D28100532EB9 /* TitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A66C2634D28100532EB9 /* TitlesView.swift */; };
+		5E73A6742634D2EB00532EB9 /* AllEarningsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6732634D2EB00532EB9 /* AllEarningsViewModel.swift */; };
+		5E73A6882634D38E00532EB9 /* VaultUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6872634D38E00532EB9 /* VaultUserData.swift */; };
+		5E73A6902634D39C00532EB9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A68F2634D39C00532EB9 /* Token.swift */; };
+		5E73A6952634D3AB00532EB9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6942634D3AB00532EB9 /* Address.swift */; };
+		5E73A69A2634D53800532EB9 /* UserAddressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6992634D53800532EB9 /* UserAddressStore.swift */; };
+		5E73A69F2634D77000532EB9 /* PreferredDisplayUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A69E2634D77000532EB9 /* PreferredDisplayUnit.swift */; };
+		5E73A6A42634D79A00532EB9 /* NumberFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6A32634D79A00532EB9 /* NumberFormatters.swift */; };
+		5E73A6A92634D9D000532EB9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E73A6A82634D9D000532EB9 /* WelcomeView.swift */; };
+		5E84CDB02635513200E22F4D /* EthPriceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CDAF2635513200E22F4D /* EthPriceStore.swift */; };
+		5E84CDB82635562000E22F4D /* Externals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CDB72635562000E22F4D /* Externals.swift */; };
+		5E84CDC32635580500E22F4D /* OracleContractAbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CDC22635580500E22F4D /* OracleContractAbi.swift */; };
+		5E84CDC92635585A00E22F4D /* BigUInt+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CDC82635585A00E22F4D /* BigUInt+Double.swift */; };
+		5E84CDD626356CAC00E22F4D /* Int+UsdcDecimalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CDD526356CAC00E22F4D /* Int+UsdcDecimalPlaces.swift */; };
+		5EBD2D6B2649C38B00BE71F7 /* VaultPositionHistoricEarningsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD2D6A2649C38B00BE71F7 /* VaultPositionHistoricEarningsViewModel.swift */; };
+		5EBD2D6D2649C3A100BE71F7 /* VaultHistoricalUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD2D6C2649C3A100BE71F7 /* VaultHistoricalUpdates.swift */; };
+		5EBD2D6F2649C3AF00BE71F7 /* AccountVaultPositionUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD2D6E2649C3AF00BE71F7 /* AccountVaultPositionUpdate.swift */; };
+		5ECFB0122647061500EA8A01 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECFB0112647061500EA8A01 /* SwiftUICharts */; };
+		5EFA961D2635B42E004BAFD6 /* AllStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA961C2635B42E004BAFD6 /* AllStores.swift */; };
+		5EFA962F2635D562004BAFD6 /* YearningsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA962E2635D562004BAFD6 /* YearningsError.swift */; };
+		5EFA96332635DB86004BAFD6 /* VaultAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA96322635DB86004BAFD6 /* VaultAlias.swift */; };
+		5EFA96412635DDF9004BAFD6 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA96402635DDF9004BAFD6 /* AddressTests.swift */; };
+		5EFA96452635DE1A004BAFD6 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA96442635DE1A004BAFD6 /* Mocks.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E73A5AC263374B400532EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E73A592263374B400532EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E73A599263374B400532EB9;
+			remoteInfo = Yearnings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E1E9CDD264F01E9009E342E /* VaultApyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultApyStore.swift; sourceTree = "<group>"; };
+		5E26880F2662DBD000CC4ABB /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
+		5E73A59A263374B400532EB9 /* Yearnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yearnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E73A59D263374B400532EB9 /* YearningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearningsApp.swift; sourceTree = "<group>"; };
+		5E73A59F263374B400532EB9 /* EarningsDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsDashboardView.swift; sourceTree = "<group>"; };
+		5E73A5A1263374B400532EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E73A5A4263374B400532EB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E73A5A6263374B400532EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E73A5AB263374B400532EB9 /* YearningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E73A5B1263374B500532EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E73A5E32633774C00532EB9 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		5E73A5E4263377D500532EB9 /* AccountEarnings.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccountEarnings.graphql; sourceTree = "<group>"; };
+		5E73A5F726337B0000532EB9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5E73A5FC26337D6000532EB9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5E73A6042634116500532EB9 /* VaultUserDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUserDataFactory.swift; sourceTree = "<group>"; };
+		5E73A60F26341A1F00532EB9 /* VaultEarningsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEarningsViewModel.swift; sourceTree = "<group>"; };
+		5E73A61426341EBC00532EB9 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		5E73A65326345FAE00532EB9 /* VaultAliasStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultAliasStore.swift; sourceTree = "<group>"; };
+		5E73A65826348A0100532EB9 /* Web3Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Store.swift; sourceTree = "<group>"; };
+		5E73A65D26348AD400532EB9 /* USDCPriceOracle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDCPriceOracle.swift; sourceTree = "<group>"; };
+		5E73A6622634AEEB00532EB9 /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		5E73A6672634C65B00532EB9 /* TotalEarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalEarningsView.swift; sourceTree = "<group>"; };
+		5E73A66C2634D28100532EB9 /* TitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesView.swift; sourceTree = "<group>"; };
+		5E73A6732634D2EB00532EB9 /* AllEarningsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllEarningsViewModel.swift; sourceTree = "<group>"; };
+		5E73A6872634D38E00532EB9 /* VaultUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultUserData.swift; sourceTree = "<group>"; };
+		5E73A68F2634D39C00532EB9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		5E73A6942634D3AB00532EB9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5E73A6992634D53800532EB9 /* UserAddressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressStore.swift; sourceTree = "<group>"; };
+		5E73A69E2634D77000532EB9 /* PreferredDisplayUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredDisplayUnit.swift; sourceTree = "<group>"; };
+		5E73A6A32634D79A00532EB9 /* NumberFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatters.swift; sourceTree = "<group>"; };
+		5E73A6A82634D9D000532EB9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5E84CDAF2635513200E22F4D /* EthPriceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthPriceStore.swift; sourceTree = "<group>"; };
+		5E84CDB72635562000E22F4D /* Externals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Externals.swift; sourceTree = "<group>"; };
+		5E84CDC22635580500E22F4D /* OracleContractAbi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleContractAbi.swift; sourceTree = "<group>"; };
+		5E84CDC82635585A00E22F4D /* BigUInt+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BigUInt+Double.swift"; sourceTree = "<group>"; };
+		5E84CDD526356CAC00E22F4D /* Int+UsdcDecimalPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+UsdcDecimalPlaces.swift"; sourceTree = "<group>"; };
+		5EBD2D6A2649C38B00BE71F7 /* VaultPositionHistoricEarningsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultPositionHistoricEarningsViewModel.swift; sourceTree = "<group>"; };
+		5EBD2D6C2649C3A100BE71F7 /* VaultHistoricalUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultHistoricalUpdates.swift; sourceTree = "<group>"; };
+		5EBD2D6E2649C3AF00BE71F7 /* AccountVaultPositionUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVaultPositionUpdate.swift; sourceTree = "<group>"; };
+		5ECFB0162647267F00EA8A01 /* AccountHistoricEarnings.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccountHistoricEarnings.graphql; sourceTree = "<group>"; };
+		5EFA961C2635B42E004BAFD6 /* AllStores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStores.swift; sourceTree = "<group>"; };
+		5EFA962E2635D562004BAFD6 /* YearningsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearningsError.swift; sourceTree = "<group>"; };
+		5EFA96322635DB86004BAFD6 /* VaultAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultAlias.swift; sourceTree = "<group>"; };
+		5EFA96402635DDF9004BAFD6 /* AddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		5EFA96442635DE1A004BAFD6 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E73A597263374B400532EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E73A60B263412A700532EB9 /* BigInt in Frameworks */,
+				5E73A5CD2633757F00532EB9 /* ApolloCore in Frameworks */,
+				5E73A5D12633757F00532EB9 /* Apollo in Frameworks */,
+				5E73A5CF2633757F00532EB9 /* ApolloWebSocket in Frameworks */,
+				5E73A5D32633757F00532EB9 /* ApolloCodegenLib in Frameworks */,
+				5E73A62B2634470100532EB9 /* Web3 in Frameworks */,
+				5E1128C3265445420079FDC3 /* KeychainSwift in Frameworks */,
+				5E73A620263435BC00532EB9 /* CryptoSwift in Frameworks */,
+				5E73A6292634470100532EB9 /* Web3ContractABI in Frameworks */,
+				5ECFB0122647061500EA8A01 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E73A5A8263374B400532EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E73A591263374B400532EB9 = {
+			isa = PBXGroup;
+			children = (
+				5E73A59C263374B400532EB9 /* Yearnings */,
+				5E73A5AE263374B500532EB9 /* YearningsTests */,
+				5E73A59B263374B400532EB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E73A59B263374B400532EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A59A263374B400532EB9 /* Yearnings.app */,
+				5E73A5AB263374B400532EB9 /* YearningsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E73A59C263374B400532EB9 /* Yearnings */ = {
+			isa = PBXGroup;
+			children = (
+				5E84CDC72635584B00E22F4D /* Extensions */,
+				5E73A6862634D37500532EB9 /* Stores */,
+				5E73A6852634D36E00532EB9 /* Models */,
+				5E73A67B2634D2FF00532EB9 /* Networking */,
+				5E73A6722634D2CC00532EB9 /* ViewModels */,
+				5E73A6712634D2B200532EB9 /* Views */,
+				5E73A59D263374B400532EB9 /* YearningsApp.swift */,
+				5E73A5A1263374B400532EB9 /* Assets.xcassets */,
+				5E73A5A6263374B400532EB9 /* Info.plist */,
+				5E73A5A3263374B400532EB9 /* Preview Content */,
+			);
+			path = Yearnings;
+			sourceTree = "<group>";
+		};
+		5E73A5A3263374B400532EB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A5A4263374B400532EB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E73A5AE263374B500532EB9 /* YearningsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A5B1263374B500532EB9 /* Info.plist */,
+				5EFA96402635DDF9004BAFD6 /* AddressTests.swift */,
+				5EFA96442635DE1A004BAFD6 /* Mocks.swift */,
+				5E26880F2662DBD000CC4ABB /* NumberFormatterTests.swift */,
+			);
+			path = YearningsTests;
+			sourceTree = "<group>";
+		};
+		5E73A6712634D2B200532EB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A59F263374B400532EB9 /* EarningsDashboardView.swift */,
+				5E73A6672634C65B00532EB9 /* TotalEarningsView.swift */,
+				5E73A66C2634D28100532EB9 /* TitlesView.swift */,
+				5E73A6622634AEEB00532EB9 /* VaultView.swift */,
+				5E73A6A82634D9D000532EB9 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E73A6722634D2CC00532EB9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A60F26341A1F00532EB9 /* VaultEarningsViewModel.swift */,
+				5E73A6732634D2EB00532EB9 /* AllEarningsViewModel.swift */,
+				5EBD2D6A2649C38B00BE71F7 /* VaultPositionHistoricEarningsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5E73A67B2634D2FF00532EB9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A5F726337B0000532EB9 /* API.swift */,
+				5E73A5E4263377D500532EB9 /* AccountEarnings.graphql */,
+				5ECFB0162647267F00EA8A01 /* AccountHistoricEarnings.graphql */,
+				5E73A5E32633774C00532EB9 /* schema.json */,
+				5E73A5FC26337D6000532EB9 /* Network.swift */,
+				5E84CDC22635580500E22F4D /* OracleContractAbi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5E73A6852634D36E00532EB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A6042634116500532EB9 /* VaultUserDataFactory.swift */,
+				5E73A6872634D38E00532EB9 /* VaultUserData.swift */,
+				5E73A68F2634D39C00532EB9 /* Token.swift */,
+				5E73A6942634D3AB00532EB9 /* Address.swift */,
+				5E73A69E2634D77000532EB9 /* PreferredDisplayUnit.swift */,
+				5EFA962E2635D562004BAFD6 /* YearningsError.swift */,
+				5EFA96322635DB86004BAFD6 /* VaultAlias.swift */,
+				5EBD2D6C2649C3A100BE71F7 /* VaultHistoricalUpdates.swift */,
+				5EBD2D6E2649C3AF00BE71F7 /* AccountVaultPositionUpdate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E73A6862634D37500532EB9 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				5E73A61426341EBC00532EB9 /* ImageStore.swift */,
+				5E73A65326345FAE00532EB9 /* VaultAliasStore.swift */,
+				5E73A65D26348AD400532EB9 /* USDCPriceOracle.swift */,
+				5E73A6992634D53800532EB9 /* UserAddressStore.swift */,
+				5E84CDAF2635513200E22F4D /* EthPriceStore.swift */,
+				5E73A65826348A0100532EB9 /* Web3Store.swift */,
+				5E84CDB72635562000E22F4D /* Externals.swift */,
+				5EFA961C2635B42E004BAFD6 /* AllStores.swift */,
+				5E1E9CDD264F01E9009E342E /* VaultApyStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		5E84CDC72635584B00E22F4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E84CDC82635585A00E22F4D /* BigUInt+Double.swift */,
+				5E84CDD526356CAC00E22F4D /* Int+UsdcDecimalPlaces.swift */,
+				5E73A6A32634D79A00532EB9 /* NumberFormatters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E73A599263374B400532EB9 /* Yearnings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E73A5BF263374B500532EB9 /* Build configuration list for PBXNativeTarget "Yearnings" */;
+			buildPhases = (
+				5E73A5D7263375D500532EB9 /* Apollo CLI */,
+				5E73A596263374B400532EB9 /* Sources */,
+				5E73A597263374B400532EB9 /* Frameworks */,
+				5E73A598263374B400532EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yearnings;
+			packageProductDependencies = (
+				5E73A5CC2633757F00532EB9 /* ApolloCore */,
+				5E73A5CE2633757F00532EB9 /* ApolloWebSocket */,
+				5E73A5D02633757F00532EB9 /* Apollo */,
+				5E73A5D22633757F00532EB9 /* ApolloCodegenLib */,
+				5E73A60A263412A700532EB9 /* BigInt */,
+				5E73A61F263435BC00532EB9 /* CryptoSwift */,
+				5E73A6282634470100532EB9 /* Web3ContractABI */,
+				5E73A62A2634470100532EB9 /* Web3 */,
+				5ECFB0112647061500EA8A01 /* SwiftUICharts */,
+				5E1128C2265445420079FDC3 /* KeychainSwift */,
+			);
+			productName = Yearnings;
+			productReference = 5E73A59A263374B400532EB9 /* Yearnings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E73A5AA263374B400532EB9 /* YearningsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E73A5C2263374B500532EB9 /* Build configuration list for PBXNativeTarget "YearningsTests" */;
+			buildPhases = (
+				5E73A5A7263374B400532EB9 /* Sources */,
+				5E73A5A8263374B400532EB9 /* Frameworks */,
+				5E73A5A9263374B400532EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E73A5AD263374B400532EB9 /* PBXTargetDependency */,
+			);
+			name = YearningsTests;
+			productName = YearningsTests;
+			productReference = 5E73A5AB263374B400532EB9 /* YearningsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E73A592263374B400532EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					5E73A599263374B400532EB9 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					5E73A5AA263374B400532EB9 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5E73A599263374B400532EB9;
+					};
+				};
+			};
+			buildConfigurationList = 5E73A595263374B400532EB9 /* Build configuration list for PBXProject "Yearnings" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E73A591263374B400532EB9;
+			packageReferences = (
+				5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				5E73A609263412A700532EB9 /* XCRemoteSwiftPackageReference "BigInt" */,
+				5E73A61E263435BC00532EB9 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				5E73A6272634470100532EB9 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				5E73A63E263450F600532EB9 /* XCRemoteSwiftPackageReference "SwiftKeccak" */,
+				5ECFB0102647061500EA8A01 /* XCRemoteSwiftPackageReference "ChartView" */,
+				5E1128C1265445420079FDC3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = 5E73A59B263374B400532EB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E73A599263374B400532EB9 /* Yearnings */,
+				5E73A5AA263374B400532EB9 /* YearningsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E73A598263374B400532EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E73A5A5263374B400532EB9 /* Preview Assets.xcassets in Resources */,
+				5E73A5A2263374B400532EB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E73A5A9263374B400532EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E73A5D7263375D500532EB9 /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://api.thegraph.com/subgraphs/name/tomprsn/yearn-vaults-v2-subgraph-mainnet\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Networking/schema.json\" Networking/API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E73A596263374B400532EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E84CDB02635513200E22F4D /* EthPriceStore.swift in Sources */,
+				5EFA96332635DB86004BAFD6 /* VaultAlias.swift in Sources */,
+				5E73A5A0263374B400532EB9 /* EarningsDashboardView.swift in Sources */,
+				5E84CDC92635585A00E22F4D /* BigUInt+Double.swift in Sources */,
+				5E84CDC32635580500E22F4D /* OracleContractAbi.swift in Sources */,
+				5E73A5F826337B0000532EB9 /* API.swift in Sources */,
+				5E73A6632634AEEB00532EB9 /* VaultView.swift in Sources */,
+				5E73A69F2634D77000532EB9 /* PreferredDisplayUnit.swift in Sources */,
+				5E73A69A2634D53800532EB9 /* UserAddressStore.swift in Sources */,
+				5EFA962F2635D562004BAFD6 /* YearningsError.swift in Sources */,
+				5EBD2D6D2649C3A100BE71F7 /* VaultHistoricalUpdates.swift in Sources */,
+				5E73A65E26348AD400532EB9 /* USDCPriceOracle.swift in Sources */,
+				5E73A6682634C65B00532EB9 /* TotalEarningsView.swift in Sources */,
+				5E1E9CDE264F01E9009E342E /* VaultApyStore.swift in Sources */,
+				5EBD2D6B2649C38B00BE71F7 /* VaultPositionHistoricEarningsViewModel.swift in Sources */,
+				5E73A6742634D2EB00532EB9 /* AllEarningsViewModel.swift in Sources */,
+				5E73A61026341A1F00532EB9 /* VaultEarningsViewModel.swift in Sources */,
+				5E73A6A42634D79A00532EB9 /* NumberFormatters.swift in Sources */,
+				5E73A6902634D39C00532EB9 /* Token.swift in Sources */,
+				5E73A5FD26337D6000532EB9 /* Network.swift in Sources */,
+				5E73A65426345FAE00532EB9 /* VaultAliasStore.swift in Sources */,
+				5E73A6A92634D9D000532EB9 /* WelcomeView.swift in Sources */,
+				5E73A65926348A0100532EB9 /* Web3Store.swift in Sources */,
+				5E84CDD626356CAC00E22F4D /* Int+UsdcDecimalPlaces.swift in Sources */,
+				5E73A59E263374B400532EB9 /* YearningsApp.swift in Sources */,
+				5EBD2D6F2649C3AF00BE71F7 /* AccountVaultPositionUpdate.swift in Sources */,
+				5E73A6952634D3AB00532EB9 /* Address.swift in Sources */,
+				5E73A6882634D38E00532EB9 /* VaultUserData.swift in Sources */,
+				5EFA961D2635B42E004BAFD6 /* AllStores.swift in Sources */,
+				5E73A61526341EBC00532EB9 /* ImageStore.swift in Sources */,
+				5E73A6052634116500532EB9 /* VaultUserDataFactory.swift in Sources */,
+				5E73A66D2634D28100532EB9 /* TitlesView.swift in Sources */,
+				5E84CDB82635562000E22F4D /* Externals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E73A5A7263374B400532EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2688102662DBD000CC4ABB /* NumberFormatterTests.swift in Sources */,
+				5EFA96412635DDF9004BAFD6 /* AddressTests.swift in Sources */,
+				5EFA96452635DE1A004BAFD6 /* Mocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E73A5AD263374B400532EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E73A599263374B400532EB9 /* Yearnings */;
+			targetProxy = 5E73A5AC263374B400532EB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5E73A5BD263374B500532EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E73A5BE263374B500532EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E73A5C0263374B500532EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_ASSET_PATHS = "\"Yearnings/Preview Content\"";
+				DEVELOPMENT_TEAM = 942PX4SP42;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Yearnings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tompearson.Yearnings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5E73A5C1263374B500532EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_ASSET_PATHS = "\"Yearnings/Preview Content\"";
+				DEVELOPMENT_TEAM = 942PX4SP42;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Yearnings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tompearson.Yearnings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5E73A5C3263374B500532EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YearningsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tompearson.YearningsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yearnings.app/Yearnings";
+			};
+			name = Debug;
+		};
+		5E73A5C4263374B500532EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YearningsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tompearson.YearningsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yearnings.app/Yearnings";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E73A595263374B400532EB9 /* Build configuration list for PBXProject "Yearnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E73A5BD263374B500532EB9 /* Debug */,
+				5E73A5BE263374B500532EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E73A5BF263374B500532EB9 /* Build configuration list for PBXNativeTarget "Yearnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E73A5C0263374B500532EB9 /* Debug */,
+				5E73A5C1263374B500532EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E73A5C2263374B500532EB9 /* Build configuration list for PBXNativeTarget "YearningsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E73A5C3263374B500532EB9 /* Debug */,
+				5E73A5C4263374B500532EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E1128C1265445420079FDC3 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+		5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.42.0;
+			};
+		};
+		5E73A609263412A700532EB9 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		5E73A61E263435BC00532EB9 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.8;
+			};
+		};
+		5E73A6272634470100532EB9 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+		5E73A63E263450F600532EB9 /* XCRemoteSwiftPackageReference "SwiftKeccak" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomprsn/SwiftKeccak.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		5ECFB0102647061500EA8A01 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomprsn/ChartView.git";
+			requirement = {
+				branch = "new-version";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E1128C2265445420079FDC3 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E1128C1265445420079FDC3 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		5E73A5CC2633757F00532EB9 /* ApolloCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCore;
+		};
+		5E73A5CE2633757F00532EB9 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		5E73A5D02633757F00532EB9 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		5E73A5D22633757F00532EB9 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A5CB2633757F00532EB9 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		5E73A60A263412A700532EB9 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A609263412A700532EB9 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+		5E73A61F263435BC00532EB9 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A61E263435BC00532EB9 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		5E73A6282634470100532EB9 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A6272634470100532EB9 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		5E73A62A2634470100532EB9 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E73A6272634470100532EB9 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		5ECFB0112647061500EA8A01 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECFB0102647061500EA8A01 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5E73A592263374B400532EB9 /* Project object */;
+}

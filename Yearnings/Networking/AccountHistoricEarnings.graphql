@@ -1,0 +1,24 @@
+query AccountHistoricEarnings($ids: [ID!]!, $shareToken: String!, $fromDate: Int!) {
+    accounts(where: {id_in: $ids}) {
+        vaultPositions(where:{shareToken: $shareToken}) {
+          balanceShares
+          token {
+            decimals
+          }
+          vault {
+            vaultDayData(where:{date_gt: $fromDate}, orderBy:date, orderDirection:asc) {
+              pricePerShare
+              date
+            }
+          }
+          updates(orderBy:timestamp, orderDirection:asc) {
+            balanceShares
+            timestamp
+            deposits
+            withdrawals
+            tokensReceived
+            tokensSent
+          }
+        }
+    }
+}
